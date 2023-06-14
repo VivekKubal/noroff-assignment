@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1  ">
+        <link rel="stylesheet" href="style.css">
+
+        <title>Komputer Store</title>
+        <script defer src="app.js"></script>
+    </head>
+    <body>
+        <div class="main-wrapper">
+        <header>
+            Komputer Store
+        </header>
+        <main>
+            <div class="container">
+                <div class="bank item-box">
+                    <h2>Bank</h2>
+                    <div class="balance">
+                        <div class="balance-box">
+                            <p> Balance:</p></div>
+                        <div class="balance-box balance-amount">
+                            <p id="bank-balance">0</p>
+                        </div>
+                        <p>&nbsp kr</p>
+                    </div>
+
+                    <div class="loan" id="loanId">
+                        <div class="loan-box">
+                            <p> Loan:</p></div>
+                        <div class="loan-box loan-amount">
+                            <p id="loanBalance">0</p>
+                        </div>
+                        <p>&nbsp kr</p>
+                    </div>
+
+                    <button class="get-loan" onclick="getLoan()"> Get the Loan</button>
+                    <button class="repay-loan" id="repay-loan"
+                        onclick="repayLoan()">Repay Loan</button>
+                </div>
+                <div class="work item-box">
+                    <h2>Work</h2>
+                    <div class="work-account">
+                        <div class="work-box">
+                            <p> Pay:</p></div>
+                        <div class="work-box work-amount">
+                            <p id="increaseSalary">0</p>
+                        </div>
+                        <span><p>&nbsp kr</p>
+                        </div>
+                        <button class="saving" onclick="bankSaving()">Bank</button>
+                        <button class="salary" onclick="addSalary()">Work</button>
+                    </div>
+
+                    <!-- Laptop buying Section -->
+                    <div class="laptop item-box">
+                        <h2>Laptop</h2>
+                        <div class="work">
+                            <div class="pay">
+                                <select id="laptopSelection"></select>
+                            </div>
+                        </div>
+
+                        <h4>Features<h4>
+                                <p id="laptop-desc"></p>
+
+                            </div>
+                        </div>
+
+                        <div class="laptop-info" id="laptop-info">
+                            <div class="laptop-image laptop-box">
+                                <img src alt id="laptop-image" width="250"
+                                    height="200">
+                            </div>
+
+                            <div class="laptop-name laptop-box">
+                                <h2 class="c" id="laptop-title"></h2>
+                                <p id="laptop-specs"></p>
+                            </div>
+
+                            <div class="laptop-buy laptop-box">
+                                <div class="price-account">
+                                    <h2 id="laptop-price"></h2>
+                                    <h2 class="currency">&nbsp kr</h2>
+                                </div>
+                                <div class="btnBuy">
+                                    <button class="buy-now" id="buy-now">Buy Now</button><br>
+                                    <small id="laptop-stock">0</small> <small class="stock">product/s in stock</small>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                    </div>
+                </body>
+            </html>

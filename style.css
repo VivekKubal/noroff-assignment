@@ -1,0 +1,192 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1rem 6.25rem;
+  font-size: 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px 50px;
+  flex-wrap: wrap;
+}
+
+.item-box {
+  padding: 0px 35px 30px 35px;
+  margin: 15px;
+  width: 250px;
+  height: 200px;
+  background-color: rgba(173, 172, 172, 0.187);
+  box-shadow: 5px 5px 10px 5px gray;
+  border-radius: 1rem;
+}
+
+.balance,
+.work-account,
+.loan,
+.price-account {
+  display: flex;
+  flex-direction: row;
+}
+
+.loan {
+  margin-top: -20px;
+  margin-bottom: auto;
+}
+
+.balance-box,
+.loan-box {
+  padding: 0px;
+}
+
+.balance-amount,
+.work-amount {
+  padding-left: 92px;
+}
+
+.loan-amount {
+  padding-left: 115px;
+}
+
+.get-loan,
+.salary,
+.saving {
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+  align-items: center;
+}
+
+.get-loan {
+  background-color: #7be382;
+}
+
+.repay-loan {
+  background-color: rgb(213, 96, 96);
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+  margin-left: 10px;
+}
+.salary,
+.saving {
+  padding: 10px 30px;
+  margin-top: 50px;
+  border-radius: 10px;
+  border: none;
+}
+
+.salary {
+  background-color: #4f7fe7;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.saving {
+  background-color: #e9e166;
+}
+
+.repay-loan {
+  visibility: hidden;
+}
+
+/* Laptop Features sections */
+.laptop-info {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px 50px;
+  flex-wrap: wrap;
+  background-color: rgba(218, 216, 216, 0.187);
+  padding: 20px;
+  border-radius: 1rem;
+  border: 1px solid rgba(163, 159, 159, 0.187);
+}
+
+.laptop-box {
+  width: 300px;
+  height: auto;
+  border-radius: 1rem;
+  padding: 10px;
+}
+
+.laptop-name {
+  margin-left: -85px;
+}
+
+#laptop-desc {
+  margin-top: -15px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.btnBuy {
+  text-align: center;
+}
+
+.buy-now {
+  justify-content: center;
+  background-color: #00bcd4;
+  color: #000000;
+  padding: 10px 70px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+}
+
+.stock {
+  color: rgb(15, 114, 17);
+  font-style: italic;
+}
+
+.price-account {
+  text-align: center;
+  margin-left: 100px;
+}
+
+.laptop-info {
+  visibility: hidden;
+}
+
+@media (max-width: 320px) {
+  .container {
+    margin: 10px 10px;
+  }
+  .laptop-box {
+    width: 300px;
+    height: auto;
+    border-radius: 1rem;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .laptop-name {
+    text-align: center;
+  }
+
+  .laptop-box {
+    width: 300px;
+    height: auto;
+    border-radius: 1rem;
+    padding: none;
+  }
+
+  .laptop-name {
+    margin-left: 20px;
+  }
+}
